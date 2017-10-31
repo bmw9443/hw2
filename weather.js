@@ -55,7 +55,7 @@ let updateWeather = function(data) {
 
   document.querySelector('.card-img-top').src = "http://openweathermap.org/img/w/" + updatedIcon + ".png";
   document.querySelector('.card-title').innerHTML = updatedCity;
-  document.querySelector('.card-text').innerHTML = "It is " + updatedTemp + " degrees outside.";
+  document.querySelector('.card-text').innerHTML = "It is " + updatedTemp.toFixed(0) + " degrees outside.";
 
 }
 
